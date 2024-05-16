@@ -3,7 +3,7 @@ let numPoints = 50;
 
 function setup() {
   createCanvas(800, 800);
-  
+  pixelDensity(1);
     noLoop();
 
   // Generate random points

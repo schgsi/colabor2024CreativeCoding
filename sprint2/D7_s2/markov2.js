@@ -217,13 +217,13 @@ function textLine(word,wordCount, yCor, len) {
 function draw() {
     // background(0)
     // noLoop();
-    textLine("no", 10, 100, 2);
-    textLine("freedom", 10, 150, 2);
-    textLine("no", 10, 200, 2);
-    textLine("justice", 10, 250, 2);
+    textLine("what", 10, 100, 2);
+    textLine("ever", 10, 150, 2);
+    textLine("will", 10, 200, 2);
+    textLine("make", 10, 250, 2);
     // textLine("in", 10, 300, 2);
-    textLine("for", 10, 350, 2);
-    textLine("Palestine", 10, 400, 2);
+    textLine("you", 10, 350, 2);
+    textLine("sleep", 10, 400, 2);
     // textLine("why", 10, 450, 2);
     // textLine("do", 10, 500, 2);
     // textLine("you", 10, 550, 2);

@@ -46,7 +46,7 @@ function dispSentence() {
     fSize = 60
     textFont(font)
     textSize(fSize)
-    msg2 = generateScentense("love", 5) + "...";
+    msg2 = generateScentense("love", 10) + "...";
     pts2 = font.textToPoints(msg2, 0, -100, fSize, {
         sampleFactor: 0.4, // increase for more points
         simplifyThreshold: 0.0 // increase to remove collinear points

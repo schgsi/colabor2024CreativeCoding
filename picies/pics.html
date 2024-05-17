@@ -10,77 +10,105 @@
 
     <script src="libraries/p5.min.js"></script>
     <script src="libraries/p5.sound.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
 
   <body>
 
-    
-    <h1>Lets talk about the process and progress</h1>
-    <h2>Sprint 1</h2>
-    <p>the theme of sprint 1 was ...</p>
-    <p>I tried various things ranging from ... to ...</p>
+    <div class="start">
+        <h1>Lets talk about the process and progress</h1>
+    </div>
+    <div class="sprint1">
+        <h2>Sprint 1</h2>
+        <p>The sprint 1 was about "generative computer art"</p> 
+        <p>I worked with preexisting code I already wrote in the module “beautiful math” that I participated in a year ago. With said code I experimented around and focused on the sine and cosine math function to calculate circles. The first few tries focused on ...</p>        
 
-    <!-- Photo Grid -->
-<div class="row"> 
-    <div class="column">
-      <img src="d1_png (1).png" style="width:100%">
-      <img src="d1_png (2).png" style="width:100%">
-      <img src="d1_png (3).png" style="width:100%">
-      <img src="d1_png (4).png" style="width:100%">
-      
-    </div>
-    <div class="column">
-      <img src="d1_png (5).png" style="width:100%">
-      <img src="d1_png (6).png" style="width:100%">
-      <img src="d3_png (1).png" style="width:100%">
-      <img src="d3_png (2).png" style="width:100%">
-      
-    </div>  
-    <div class="column">
-      <img src="d3_png (3).png" style="width:100%">
-      <img src="d3_png (4).png" style="width:100%">
-      <img src="d3_png (5).png" style="width:100%">
-      <img src="d3_png (6).png" style="width:100%">
-      
-    </div>
-    <div class="column">
-        <img src="d3_png (7).png" style="width:100%">
-        <img src="d3_png (8).png" style="width:100%">
-        <img src="d3_png (9).png" style="width:100%">
-        <img src="d3_png (10).png" style="width:100%">
-    </div>
-  </div>
+            <!-- Photo Grid -->
+        <div class="row"> 
+            <div class="column">
+            <img src="d1_png (1).png" style="width:100%">
+            <img src="d1_png (2).png" style="width:100%">
+            <img src="d1_png (3).png" style="width:100%">
+            <img src="d1_png (4).png" style="width:100%">
+            
+            </div>
+            <div class="column">
+            <img src="d1_png (5).png" style="width:100%">
+            <img src="d1_png (6).png" style="width:100%">
+            <img src="d3_png (1).png" style="width:100%">
+            <img src="d3_png (2).png" style="width:100%">
+            
+            </div>  
+            <div class="column">
+            <img src="d3_png (3).png" style="width:100%">
+            <img src="d3_png (4).png" style="width:100%">
+            <img src="d3_png (5).png" style="width:100%">
+            <img src="d3_png (6).png" style="width:100%">
+            
+            </div>
+            <div class="column">
+                <img src="d3_png (7).png" style="width:100%">
+                <img src="d3_png (8).png" style="width:100%">
+                <img src="d3_png (9).png" style="width:100%">
+                <img src="d3_png (10).png" style="width:100%">
+            </div>
+        </div>
 
-  <h2>some more worked out examples</h2>
-  <div class="row"> 
-    <div class="column">
-      <img src="d4_png (12).png" style="width:100%">
-      <img src="d4_png (13).png" style="width:100%">
-      <img src="d4_png (14).png" style="width:100%">
-      
-      
+        <h2>some more worked out examples</h2>
+        <p>To focus my work more on a design level, I decided to find a colour spectrum I visually liked and settled on a dark turquoise-green with a varying brightness. 
+            I liked to experiment with animating the different circles and adding a rotation value over time. For that I added an offset-value, which added a fraction to itself every frame.</p>
+
+            <p class="code">function sinCircle(x,y) { <br>
+                &nbsp;let rad = 200; <br>
+                &nbsp;let mid_point = createVector(x,y); <br>
+            <br>
+                &nbsp;for (let a=0; a<=360; a+=2) { <br>
+                    &nbsp;&nbsp;stroke(random(360),a/3,a/3); <br>
+                    &nbsp;&nbsp;strokeWeight(10); <br>
+                    &nbsp;&nbsp;let x = rad*sin(radians(a))+mid_point.x; <br>
+                    &nbsp;&nbsp;let y = rad*cos(radians(a))+mid_point.y; <br>
+                    &nbsp;&nbsp;point(x+random(-10,10),y+random(-10,10)); <br>
+                    &nbsp;}<br>
+            }</p>
+
+        <!--Photo Grid 2-->
+        <div class="row"> 
+            <div class="column">
+            <img src="d4_png (12).png" style="width:100%">
+            <img src="d4_png (13).png" style="width:100%">
+            <img src="d4_png (14).png" style="width:100%">
+            
+            
+            </div>
+            <div class="column">
+            <img src="d4_png (15).png" style="width:100%">
+            <img src="d4_png (16).png" style="width:100%">
+            <img src="d4_png (17).png" style="width:100%">
+            
+            
+            </div>  
+            <div class="column">
+            <img src="d4_png (18).png" style="width:100%">
+            <img src="d4_png (19).png" style="width:100%">
+            <img src="d4_png (20).png" style="width:100%">
+            
+            
+            </div>
+            <div class="column">
+            <img src="d4_png (21).png" style="width:100%">
+            <img src="d4_png (22).png" style="width:100%">
+            <img src="d4_png (23).png" style="width:100%">
+                
+            </div>
+        </div>
     </div>
-    <div class="column">
-      <img src="d4_png (15).png" style="width:100%">
-      <img src="d4_png (16).png" style="width:100%">
-      <img src="d4_png (17).png" style="width:100%">
-      
-      
-    </div>  
-    <div class="column">
-      <img src="d4_png (18).png" style="width:100%">
-      <img src="d4_png (19).png" style="width:100%">
-      <img src="d4_png (20).png" style="width:100%">
-      
-      
+    <div class="sprint2">
+        <h2>sprint 2</h2>
+        <p></p>
     </div>
-    <div class="column">
-      <img src="d4_png (21).png" style="width:100%">
-      <img src="d4_png (22).png" style="width:100%">
-      <img src="d4_png (23).png" style="width:100%">
-        
-    </div>
-  </div>
 
     <h2>Sprint 2</h2>
   </body>

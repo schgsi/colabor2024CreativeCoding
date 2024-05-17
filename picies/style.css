@@ -6,15 +6,41 @@
   
   body {
     margin: 5em;
-    font-family:'Courier New', Courier, monospace;
-    color: white;
-    background-color:rgb(78, 78, 78);
+    background-color:rgb(12, 30, 24);
+  }
+
+  h1 {
+    color: rgb(255, 255, 255);
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+  }
+
+  h2 {
+    color: rgb(0, 181, 121);
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+  }
+  
+  p {
+    color: rgb(192, 255, 234);
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+  }
+
+  .code {
+    color: rgb(128, 155, 146);
+    font-family: "Cutive Mono", monospace;
+    font-size: 22px;
   }
   
   .header {
     text-align: center;
     padding: 32px;
   }
+
+  /*  yesyes  */
   
   .row {
     display: -ms-flexbox; /* IE10 */
@@ -22,7 +48,7 @@
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
     padding: 0 4px;
-    width: 60%;
+    width: 80%;
     margin: auto;
   }
   
@@ -56,4 +82,10 @@
       flex: 100%;
       max-width: 100%;
     }
+  }
+
+  .roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
   }

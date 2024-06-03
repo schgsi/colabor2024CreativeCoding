@@ -13,7 +13,7 @@ let path
 
 function preload() {
     txt = loadStrings("loveletters.txt");
-    font = loadFont('_fonts/titanone-regular.ttf');
+    font = loadFont('_fonts/anonymouspro-regular.ttf');
 }
 
 function setup() {

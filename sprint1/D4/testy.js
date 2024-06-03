@@ -34,7 +34,7 @@ function sinSquare(x,y,radius) {
 
 function draw() {
     background(255);
-    for (let i = 0; i < 600; i+=18) {
+    for (let i = 0; i < 600; i+=25) {
         sinSquare(400,400,i);
     }
     offs+=0.001;
